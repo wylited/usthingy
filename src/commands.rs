@@ -353,7 +353,7 @@ pub async fn view_project(
                                 display_lines.push(format!("{} **{}/[#{}]({})** {}", icon, repo, number, url, title));
                                 menu_options.push((number, title.to_string(), repo.to_string()));
                             } else if let Some(draft_title) = content.and_then(|c| c.get("title")).and_then(|t| t.as_str()) {
-                                display_lines.push(format!("<:project_item_draft:1458877119789797580> **Draft:** {}", draft_title));
+                                display_lines.push(format!("<:issue_draft:1458883679777460434> **Draft:** {}", draft_title));
                                 // Drafts skipped in menu for now as they have no number
                             }
                         }

@@ -62,7 +62,7 @@ pub async fn event_handler(
                                                 display_lines.push(format!("{} **{}/[#{}]({})** {}", icon, repo, number, url, title));
                                                 menu_options.push((number, title.to_string(), repo.to_string()));
                                           } else if let Some(draft) = content.and_then(|c| c.get("title")).and_then(|t| t.as_str()) {
-                                                display_lines.push(format!("<:project_item_draft:1458877119789797580> **Draft:** {}", draft));
+                                                display_lines.push(format!("<:issue_draft:1458883679777460434> **Draft:** {}", draft));
                                           }
                                      }
                                  }
